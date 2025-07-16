@@ -3,6 +3,9 @@
     <!-- Argumentos para o mundo -->
     <arg name="world_name" default="$(find professor_mundo)/worlds/mundo_corredor.world"/>
 
+     <!-- Variável de ambiente para localizar modelos -->
+    <env name="GAZEBO_MODEL_PATH" value="$(find aruco)/models:$(find professor_mundo)/models" />
+
     <!-- Argumentos para o robô -->
     <arg name="ns" default="p3dx"/>
     <arg name="x" default="0.0"/>
