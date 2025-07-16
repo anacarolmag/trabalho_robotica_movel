@@ -404,6 +404,39 @@
         <kinematic>0</kinematic>
       </link>
     </model>
+
+  <model name='aruco_tag_0'>
+    <pose>3.39544 9.01039 0.5 0 -0 -1.67123</pose>
+    <scale>1 1 1</scale>
+    <link name='marker'>
+      <pose>3.39544 9.01039 0.5 0 -0 -1.67123</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>-0 -0 0 0 -0 0</acceleration>
+      <wrench>-0 -0 0 0 -0 0</wrench>
+    </link>
+  </model>
+
+  <model name='aruco_tag_1'>
+    <pose>2.43302 1.5344 0.5 0 -0 -0.14482</pose>
+    <scale>1 1 1</scale>
+    <link name='marker'>
+      <pose>2.43302 1.5344 0.5 0 -0 -0.14482</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>-0 -0 0 0 -0 0</acceleration>
+      <wrench>-0 -0 0 0 -0 0</wrench>
+    </link>
+  </model>
+
+  <model name='aruco_tag_2'>
+    <pose>-2.82024 7.51484 0.5 0 0 -2.17197</pose>
+    <scale>1 1 1</scale>
+    <link name='marker'>
+      <pose>-2.82024 7.51484 0.5 0 0 -2.17197</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 -0 0 -0 0</acceleration>
+      <wrench>0 0 -0 0 -0 0</wrench>
+    </link>
+  </model>
     <state world_name='default'>
       <sim_time>160 136000000</sim_time>
       <real_time>161 148694765</real_time>
@@ -445,16 +478,6 @@
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder'>
-        <pose>3 -0 0.499991 0 -0 0</pose>
-        <scale>0.633956 0.633956 1</scale>
-        <link name='link'>
-          <pose>3 -0 0.499991 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
