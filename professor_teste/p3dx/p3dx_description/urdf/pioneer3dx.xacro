@@ -234,7 +234,7 @@ work original in ucs-ros-pkg.
     <child link="camera_link"/>
     <!-- Posição acima do robô: 0.0m à frente, 0.0m ao lado, 0.25m acima
          Orientação: -90° em X para mirar para cima (pitch = -1.57 rad) -->
-    <origin xyz="0 0 0.25" rpy="0 -1.5708 0"/>
+    <origin xyz="0.2 0 0.25" rpy="0 0 0"/>
   </joint>
 
   <!-- Plugin da câmera do Gazebo com ROS -->
