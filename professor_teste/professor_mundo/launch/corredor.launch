@@ -12,13 +12,14 @@
     <arg name="y" default="0.0"/>
     <arg name="z" default="0.0"/>
 
-  <!-- Argumentos principais -->
-  <arg name="world_name" default="$(find professor_mundo)/worlds/mundo_corredor.world"/>
-  <arg name="x" default="0.0"/>
-  <arg name="y" default="0.0"/>
-  <arg name="z" default="0.0"/>
-  <arg name="yaw" default="0.0"/>
-  <arg name="ns" default="p3dx"/>
+    <!-- Argumentos principais -->
+    <arg name="world_name" default="$(find professor_mundo)/worlds/mundo_corredor.world"/>
+    <arg name="x" default="0.0"/>
+    <arg name="y" default="0.0"/>
+    <arg name="z" default="0.0"/>
+    <arg name="yaw" default="0.0"/>
+    <arg name="ns" default="p3dx"/>
+
     <!-- Inicia o Gazebo com o mundo personalizado -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg world_name)"/>
