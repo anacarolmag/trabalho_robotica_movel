@@ -37,7 +37,4 @@
   <!-- Parâmetros de navegação do ArUco -->
   <rosparam file="$(find trabalho_robotica_movel)/professor_teste/config/aruco_navigation.yaml" command="load" />
 
-  <!-- Inicia o RViz com visualização customizada -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find trabalho_robotica_movel)/rviz/trabalho_robotica_movel.rviz" />
-
 </launch>
