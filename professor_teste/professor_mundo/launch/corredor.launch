@@ -38,6 +38,6 @@
   <rosparam file="$(find trabalho_robotica_movel)/professor_teste/config/aruco_navigation.yaml" command="load" />
 
   <!-- Inicia o RViz com visualização customizada -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find aruco_navigation)/rviz/aruco_navigation.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find trabalho_robotica_movel)/rviz/aruco_navigation.rviz" />
 
 </launch>
