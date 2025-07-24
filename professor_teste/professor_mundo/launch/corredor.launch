@@ -22,9 +22,6 @@
     <arg name="debug" value="false"/>
   </include>
 
-  <!-- Inicia o gzclient manualmente após o Gazebo estar rodando -->
-  <node name="gazebo_client" pkg="gazebo_ros" type="gzclient" output="screen"/>
-
   <!-- Descrição do robô (xacro) -->
   <param name="/robot_description" command="$(find xacro)/xacro --inorder $(find p3dx_description)/urdf/pioneer3dx.xacro"/>
 
@@ -36,6 +33,9 @@
       <arg name="y" value="$(arg y)" />
       <arg name="z" value="$(arg z)" />
   </include>
+
+  <!-- Inicia o gzclient manualmente após o Gazebo estar rodando -->
+  <node name="gazebo_client" pkg="gazebo_ros" type="gzclient" output="screen"/>
 
   <!-- Parâmetros de navegação do ArUco -->
   <rosparam file="$(find trabalho_robotica_movel)/professor_teste/config/aruco_navigation.yaml" command="load" />
