@@ -9,9 +9,6 @@
   <arg name="yaw" default="0.0"/>
   <arg name="ns" default="p3dx"/>
 
-  <!-- Caminho para os modelos ArUco e locais -->
-  <env name="GAZEBO_MODEL_PATH" value="$(find trabalho_robotica_movel)/professor_teste/aruco/models:$(find professor_mundo)/models" />
-
   <!-- Lança o mundo com Gazebo -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(arg world_name)"/>
