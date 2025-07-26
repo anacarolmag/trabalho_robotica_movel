@@ -1,4 +1,4 @@
 <launch>
-  <rosparam file="$(find trabalho_robotica_movel)/professor_teste/parametros/config/parametros.yaml" command="load"/>
+  <rosparam file="$(find trabalho_robotica_movel)/professor_teste/p3dx_controle/config/aruco_navigation.yaml" command="load"/>
 </launch>
 
