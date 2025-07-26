@@ -1,0 +1,4 @@
+<launch>
+  <rosparam file="$(find trabalho_robotica_movel)/professor_teste/parametros/config/parametros.yaml" command="load"/>
+</launch>
+
