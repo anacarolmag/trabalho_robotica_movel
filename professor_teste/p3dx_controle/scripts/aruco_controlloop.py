@@ -1,7 +1,11 @@
 #! /usr/bin/env python3
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+
+from opencv_p3dx import detection
 import rospy
 from geometry_msgs.msg import Twist
-from opencv import detection
 from cv_bridge import CvBridge, CvBridgeError
 
 import cv2
@@ -13,7 +17,7 @@ class Robot_Controller:
 
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/p3dx/camera/image_raw", Image, self.callback)
-        self.image_pub = rospy.Publisher("image_topic_2", Image)
+        self.image_pub = rospy.Publisher("image_topic_2", Image, queue_size=10)
         self.pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 
         self.velocity_msg = Twist()
@@ -126,7 +130,7 @@ class Robot_Controller:
 
 
 def main():
-    rospy.init_node("robot controller", anonymous=True)
+    rospy.init_node("robot_controller", anonymous=True)
     of = Robot_Controller()
     try:
         rospy.spin()
@@ -138,5 +142,4 @@ def main():
 
 
 main()
-
 
