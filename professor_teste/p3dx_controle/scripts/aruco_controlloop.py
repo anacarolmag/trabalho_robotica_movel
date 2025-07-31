@@ -18,7 +18,7 @@ class Robot_Controller:
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/p3dx/camera/image_raw", Image, self.callback)
         self.image_pub = rospy.Publisher("image_topic_2", Image, queue_size=10)
-        self.pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        self.pub = rospy.Publisher('/p3dx/cmd_vel', Twist, queue_size=10)
 
         self.velocity_msg = Twist()
         self.angular_p = rospy.get_param("aruco_navigation/angular_p")
